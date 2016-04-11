@@ -18,7 +18,7 @@ var Button = React.createClass({
 	},
 	_onPressIn: function() { 
 		this.setState({pressing: true});
-		i++;
+		if(i<9999){i++;}
 		//Vibration.vibrate();
 	},
 	_onPressOut: function() { 
@@ -100,7 +100,7 @@ var styles = StyleSheet.create({
   	backgroundColor: '#000000',
   },
   blank:{
-  	margin: 10,
+  	margin: 5,
   },	 
   welcome_L: {
     fontSize: 100,
